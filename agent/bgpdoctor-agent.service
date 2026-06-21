@@ -1,0 +1,20 @@
+[Unit]
+Description=BGPDoctor Telemntry Agent
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=Simple
+User=root
+WorkingDirectory=/etc/bgpdoctor-agent
+ExecStart=/usr/bin/python3 /etc/bgpdoctor-agent/bgpdoctor-agent.py --config /etc/bgpdoctor-agent/config.yaml
+Restart=always
+RestartSec=10
+NoNewPriviliges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/etc/bgpdoctor-agent
+
+[Install]
+WantedBy=multi-user.target
