@@ -60,7 +60,7 @@ final class SettingsController
         $label = trim((string) Request::input('label', 'New key'));
         $key = (new AgentKey())->create($label ?: 'New key');
         // key can only be seen once
-        $_SESSION['flash_api_key'] = $key; // i dont wanna flash the api key tho..
+        $_SESSION['flash_api_key'] = $key; 
         Response::redirect('/settings.php?success=key_created');
     }
     public function revokeApiKey(int $id): void
