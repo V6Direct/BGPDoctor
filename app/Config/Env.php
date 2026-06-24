@@ -33,4 +33,4 @@ final class Env
         return $_ENV[$key] ?? getenv($key) ?: $default;
     }
 }
-// lowk wtf is that code..
+// lowk what is that code..
