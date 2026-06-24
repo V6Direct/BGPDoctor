@@ -1,3 +1,7 @@
 # BGPDoctor
 
-**BGPDoctor** is a PHP-based web application designed to analyze and optimize BGP routing configurations. It collects routing and network data from routers through a lightweight Python 3 agent running on devices such as Pathvector and BIRD installations. The gathered data is then processed and analyzed using Hack Club AI, which generates detailed reports containing routing insights, potential issues, best-practice recommendations, and suggestions for improving network performance, resilience, and security.
+**BGPDoctor** is a tool for analyzing BGP configurations and routing data.
+
+A lightweight Python agent runs on systems such as BIRD and Pathvector and collects information about routes, peers, and general network state. The data is sent to the BGPDoctor backend, where it is processed and analyzed.
+
+BGPDoctor generates reports that can help identify routing problems, configuration mistakes, and other issues that may affect network stability or performance. The goal is to make it easier for network operators to understand what's happening in their network and spot potential improvements.
