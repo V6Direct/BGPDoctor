@@ -35,4 +35,4 @@ final class Database
         }
         return self::connection();
     }
-} // pretty sure some1 once told me not to use PDO anymore, but i cant remember so idgaf
+} // pretty sure some1 once told me not to use PDO anymore, but i cant remember sooo
