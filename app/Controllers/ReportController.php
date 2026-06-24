@@ -108,6 +108,3 @@ final class ReportController
     }
 }
 
-
-// genuinly what am i doing here, im doing ts while my gf is ovulating and needs attention if i die, then with honour
-// ts fucked me harder than my girlfriend
